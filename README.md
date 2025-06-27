@@ -6,10 +6,10 @@
 
 Install:
 ```ssh
-apm install atom-bash
+apm install https://github.com/tmiland/atom-bash.git
 ```
 
-Mian Features:
+Main Features:
 
   - Snippet Bash
 
@@ -20,11 +20,15 @@ Version:
 
 
 ## Snippet list
-|Snippet short| Description|
+|~~Snippet short~~| Description|
 |----|-----------|
-| s- | bash all  |
-| sc- | comparision(-eq,-ne...) |
+| ~~s-~~ | bash all  |
+| ~~sc-~~ | comparision(-eq,-ne...) |
 
+## Modification by @tmiland 
+
+- Removed "snippet shorts" so snippets will show up when typing.
+  * E.g: type ```for``` for a for loop, and not ```s-for``` 
 
 ---
 > [@code4mk](https://twitter.com/code4mk)
