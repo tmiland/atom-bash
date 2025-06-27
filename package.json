@@ -1,7 +1,7 @@
 {
   "name": "atom-bash",
-  "version": "1.1.1",
-  "description": "bash snippets >> Snippet >> atom-bash by @code4mk & 0devco",
+  "version": "1.1.2",
+  "description": "bash snippets >> Snippet >> atom-bash by @code4mk & 0devco modified by @tmiland",
   "keywords": [
     "bash",
     "snippet",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/code4mk/atom-bash"
+    "url": "https://github.com/tmiland/atom-bash"
   },
   "license": "MIT",
   "engines": {
