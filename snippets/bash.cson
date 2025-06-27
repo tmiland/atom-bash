@@ -249,32 +249,32 @@
     """
 
   '-e exist file -> bash file':
-    'prefix': 'sf-e',
+    'prefix': 'e',
     'body': """
     -e $1
     """
   '-d exist directory -> bash file':
-    'prefix': 'sf-d',
+    'prefix': 'd',
     'body': """
     -d $1
     """
   '-f exist file & regular -> bash file':
-    'prefix': 'sf-f',
+    'prefix': 'f',
     'body': """
     -f $1
     """
   '-r read -> bash file':
-    'prefix': 'sf-r',
+    'prefix': 'r',
     'body': """
     -r $1
     """
   '-w write -> bash file':
-    'prefix': 'sf-w',
+    'prefix': 'w',
     'body': """
     -w $1
     """
   '-x execute -> bash file':
-    'prefix': 'sf-x',
+    'prefix': 'x',
     'body': """
     -x $1
     """
@@ -296,12 +296,12 @@
     eval $1
     """
   'exit 0 -> bash':
-    'prefix': 'exit0',
+    'prefix': 'e0',
     'body': """
     exit 0
     """
   'exit 1 -> bash':
-    'prefix': 'exit1',
+    'prefix': 'e1',
     'body': """
     exit 1
     """
