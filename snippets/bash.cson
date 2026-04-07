@@ -5,46 +5,55 @@
     'body': """
     # This is bash comment
     """
+
   'bash  -> bash':
     'prefix': 'bash',
     'body': """
     #!/usr/bin/env bash
     """
+
   'echo  -> bash':
     'prefix': 'echo',
     'body': """
     echo $1
     """
+
   'printf  -> bash':
     'prefix': 'printf',
     'body': """
     printf $1
     """
+
   'read  -> bash':
     'prefix': 'read',
     'body': """
     read -p "your q" q$1
     """
+
   'var set -> bash':
     'prefix': 'var',
     'body': """
     var_name=$1
     """
+
   'var local set -> bash':
     'prefix': 'varlocal',
     'body': """
     local var_name=$1
     """
+
   'var global set -> bash':
     'prefix': 'varglobal',
     'body': """
     export var_name=$1
     """
+
   'var get -> bash':
     'prefix': 'varget',
     'body': """
     $var_name
     """
+
   'var delete -> bash':
     'prefix': 'vardelete',
     'body': """
@@ -68,16 +77,19 @@
     'body': """
     ${array_list[$1]}
     """
+
   'array size -> bash':
     'prefix': 'arrsize',
     'body': """
     ${#array_list$1}
     """
+
   'array slice -> bash':
     'prefix': 'arrayslice',
     'body': """
     ${array_list[$1]:0:3}
     """
+
   'array delete -> bash':
     'prefix': 'arraydelete',
     'body': """
@@ -89,36 +101,43 @@
     'body': """
     [ $1 ]
     """
+
   'equal -> bash':
     'prefix': 'eq',
     'body': """
     -eq $1
     """
+
   'not equal -> bash':
     'prefix': 'ne',
     'body': """
     -ne $1
     """
+
   'less than -> bash':
     'prefix': 'lt',
     'body': """
     -lt $1
     """
+
   'less than equal -> bash':
     'prefix': 'le',
     'body': """
     -le $1
     """
+
   'greater than -> bash':
     'prefix': 'gt',
     'body': """
     -gt $1
     """
+
   'greater than equal -> bash':
     'prefix': 'ge',
     'body': """
     -ge $1
     """
+
   'if -> bash':
     'prefix': 'if',
     'body': """
@@ -126,6 +145,7 @@
       # code
     fi
     """
+
   'if -> else -> bash':
     'prefix': 'if2',
     'body': """
@@ -135,6 +155,7 @@
       # code
     fi
     """
+
   'else if -> bash':
     'prefix': 'if3',
     'body': """
@@ -166,6 +187,7 @@
       ;;
     esac
     """
+
   'case -> bash':
     'prefix': 'case',
     'body': """
@@ -173,6 +195,7 @@
       #code
     ;;
     """
+
   'for in -> bash':
     'prefix': 'forin',
     'body': """
@@ -180,6 +203,7 @@
       #code
     done
     """
+
   'for -> bash':
     'prefix': 'for',
     'body': """
@@ -187,6 +211,7 @@
       #code
     done
     """
+
   'while -> bash':
     'prefix': 'while',
     'body': """
@@ -194,6 +219,7 @@
       #statements
     done
     """
+
   'until -> bash':
     'prefix': 'until',
     'body': """
@@ -202,32 +228,36 @@
     done
     """
 
-
   'pipe -> bash':
     'prefix': 'pipe',
     'body': """
     | $1
     """
+
   'and -> bash':
     'prefix': 'and',
     'body': """
     && $1
     """
+
   'or -> bash':
     'prefix': 'or',
     'body': """
     || $1
     """
+
   'not -> bash':
     'prefix': 'not',
     'body': """
     ! $1
     """
+
   'continue -> bash':
     'prefix': 'continue',
     'body': """
     continue
     """
+
   'break -> bash':
     'prefix': 'break',
     'body': """
@@ -253,26 +283,31 @@
     'body': """
     -e $1
     """
+
   '-d exist directory -> bash file':
     'prefix': 'd',
     'body': """
     -d $1
     """
+
   '-f exist file & regular -> bash file':
     'prefix': 'f',
     'body': """
     -f $1
     """
+
   '-r read -> bash file':
     'prefix': 'r',
     'body': """
     -r $1
     """
+
   '-w write -> bash file':
     'prefix': 'w',
     'body': """
     -w $1
     """
+
   '-x execute -> bash file':
     'prefix': 'x',
     'body': """
@@ -290,26 +325,31 @@
     'body': """
     alias me='$1'
     """
+
   'eval -> bash':
     'prefix': 'eval',
     'body': """
     eval $1
     """
+
   'exit 0 -> bash':
     'prefix': 'e0',
     'body': """
     exit 0
     """
+
   'exit 1 -> bash':
     'prefix': 'e1',
     'body': """
     exit 1
     """
+
   '# @formatter:on -> bash':
     'prefix': 'fon',
     'body': """
     # @formatter:on
     """
+
   '# @formatter:on -> bash':
     'prefix': 'fof',
     'body': """
