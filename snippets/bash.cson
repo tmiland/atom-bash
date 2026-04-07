@@ -305,3 +305,13 @@
     'body': """
     exit 1
     """
+  '# @formatter:on -> bash':
+    'prefix': 'fon',
+    'body': """
+    # @formatter:on
+    """
+  '# @formatter:on -> bash':
+    'prefix': 'fof',
+    'body': """
+    # @formatter:off
+    """
