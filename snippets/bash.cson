@@ -197,6 +197,12 @@
     """
 
   'for in -> bash':
+    'prefix': 'forb',
+    'body': """
+    for i in $1; do
+    """
+
+  'for in -> bash':
     'prefix': 'forin',
     'body': """
     for i in $1; do
