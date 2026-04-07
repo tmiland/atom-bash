@@ -168,7 +168,7 @@
     fi
     """
 
-  'else if el-> bash':
+  'else if el -> bash':
     'prefix': 'elseif',
     'body': """
     elif [ $1 ]; then
