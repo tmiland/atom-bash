@@ -356,7 +356,7 @@
     # @formatter:on
     """
 
-  '# @formatter:on -> bash':
+  '# @formatter:off -> bash':
     'prefix': 'fof',
     'body': """
     # @formatter:off
