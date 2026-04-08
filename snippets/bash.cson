@@ -196,7 +196,7 @@
     ;;
     """
 
-  'for in -> bash':
+  'for i -> bash':
     'prefix': 'forb',
     'body': """
     for i in $1; do
